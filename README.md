@@ -7,7 +7,7 @@ To setup the server, download the zip file extract it and run the command
 
 ## Run the app
 
-    node app.js
+    npm start
 
 ## Run the tests
 
