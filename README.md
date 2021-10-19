@@ -44,7 +44,7 @@ It converts the text in the destination language.
 The translated text, the source text, the source language, the destination language are stored in the database.
 
 
-The POST request expects its body to be an Object with the given paramters.
+The POST request expects its body to be an *Object* with the given paramters.
 
     {
         src: 'THE_SOURCE_LANGUAGE'
@@ -82,7 +82,7 @@ The property is empty if `isTranslated` is false.
 
 Besides these if `isTranslated` is false it contains and additional property `reason`
 
-`reason` instructs the reason for failure of the request made
+`Reason` tells the reason for failure of the request made
 
 ### Cache Database Schema
 
@@ -138,5 +138,4 @@ The `200-status-code` testcases were further judged on basis of their expected r
 
 4. **API protection with API key**: The API can be integrated with an API key such as to limit access to frequent and real users.
 
-
-
+5. **Machine learning modules for speech to text**: A machine learning or AI module can be incorporated to convert one's speech into another language's speech.
