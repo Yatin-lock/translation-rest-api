@@ -52,7 +52,7 @@ The POST request expects its body to be an Object with the given paramters.
 
 `src` and `to` expects the languages in `ISO-639-1 Code`.
 
-[List of Language mapping with `ISO-639-1 Code`].(https://cloud.google.com/translate/docs/languages).
+[List of Language mapping with `ISO-639-1 Code`](https://cloud.google.com/translate/docs/languages).
 
 The parameters `src` and `to` are given a default value `'en'`.
 It stands for the english language in `ISO-639-1 Code`.
