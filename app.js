@@ -56,7 +56,7 @@ app.post('/', async (req, res) => {
                 try {
                     // using the translation api 
                     const responseText = await translate(text, {
-                        from: src||auto,
+                        from: src||"auto",
                         to,
                     })
                     // saving the current translation in database
