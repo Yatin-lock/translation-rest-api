@@ -1,4 +1,7 @@
 // setting up dependencies
+if(process.env.NODE_ENV!=="production"){
+    require('dotenv').config()
+}
 const express = require('express');
 const translate = require('translate-google-api');
 const app = express();
@@ -12,7 +15,8 @@ app.use(express.json());
 //setting up the database
 const mongoose = require('mongoose');
 const { response } = require('express');
-mongoose.connect('mongodb://localhost:27017/translation')
+const dbURL = process.env.DB_URL;
+mongoose.connect(dbURL)
     .then(res => console.log(`database connected`))
     .catch(e => console.log('error connecting databse', err))
 
