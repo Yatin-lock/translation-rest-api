@@ -12,9 +12,9 @@ const Translations = require('./models/Translations');
 // parsing data using json
 app.use(express.json());
 
+let s;
 //setting up the database
 const mongoose = require('mongoose');
-const { response } = require('express');
 const dbURL = process.env.DB_URL;
 mongoose.connect(dbURL)
     .then(res => console.log(`database connected`))
@@ -93,11 +93,8 @@ app.post('/', async (req, res) => {
 app.get('*',(req,res)=>{
     res.status(404).send({ isTranslated: false, reason: "No resource found" });
 })
-//server port and listener
-let server = app.listen(3000, (req, res) => {
-    console.log(`listening on port 3000`);
-})
 
-// server export for testing
-module.exports = server;
+// app export for server setup
+
+module.exports = app;
 

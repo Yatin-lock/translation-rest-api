@@ -27,7 +27,17 @@ const testCases = {
         {
             "to": "ar",
             "text": "Ceci est un texte anglais"
-        }
+        },
+        {
+            "src": "fr",
+            "to": "ar",
+            "text": "Ceci est un texte anglais"
+        },
+        {
+            "src": "fr",
+            "to": "en",
+            "text": "Ceci est un texte anglais"
+        },
     ],
     statusCode400: [
         {
