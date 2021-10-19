@@ -80,6 +80,10 @@ The `text` property contains the translated text.
 
 The property is empty if `isTranslated` is false.
 
+Besides these if `isTranslated` is false it contains and additional property `reason`
+
+`Reason` tells the reason for failure of the request made
+
 ### Cache Database Schema
 
 The cache is centred around mongodb Database(NO SQL).
